@@ -1,0 +1,90 @@
+ContosoAir User Story Mapping Meeting Notes
+Date: August 5
+Attendees:
+
+Rachel (PM)
+
+Jared (UX)
+
+Priya (Data)
+
+Leo (Eng)
+
+Rachel:
+Alright, let’s talk through this idea for business travelers. We’ve heard from a few folks that changing flights last-minute is a pain. I want to see if there’s something we could do here.
+
+Jared:
+Yeah, I remember that came up in the last round of customer interviews. One guy said he missed a meeting because he didn’t realize the airline had changed the gate or something like that?
+
+Priya:
+Different problem, I think. But still, yeah, people are trying to stay flexible and the app doesn't really help with rebooking. It's like—you have to go back to the confirmation email and then click through to the airline... it’s not ideal.
+
+Leo:
+Well technically we could pull in alternate flights, but I’d want to know what exactly we’re talking about here. Are we trying to let them rebook entirely through us or just surface options?
+
+Rachel:
+Good question. Maybe start by framing it from the user’s point of view. Let’s do a quick pass at a story map—Jeff Patton-style. Who are we building this for?
+
+Priya:
+Probably the “power users” who fly a lot for work. The corporate accounts, basically.
+
+Rachel:
+Yeah, like someone flying to Chicago for a client meeting, then the client pushes the meeting two hours. That kind of use case.
+
+Jared:
+Let’s just call him Jordan for now. He books a lot of short flights, mostly mobile. Doesn’t care about miles—just wants to get there and back.
+
+Rachel:
+Okay, so Jordan needs to… what’s the goal here?
+
+Jared:
+Make quick changes to his travel plans when things shift. Without calling support.
+
+Leo:
+And ideally without having to re-enter all the info he already gave us.
+
+Rachel:
+Yep. Let’s list out the high-level stuff he’s trying to do. Just rough.
+
+Jared:
+I mean... he checks his trip, sees it won’t work, tries to find something else.
+
+Priya:
+So like:
+
+Look at current itinerary
+
+See what’s available
+
+Pick something better
+
+Confirm the change
+
+Maybe update his calendar?
+
+Rachel:
+That’s good. We don’t need to get into every detail right now. For “see what’s available,” what actually happens?
+
+Leo:
+Depends. If it's same-day, we’d need access to airline APIs or cache a bunch of options. Not sure what we have today.
+
+Priya:
+We could maybe use booking history to suggest typical routes? Like if they always take the 4 PM to LAX, prioritize that.
+
+Jared:
+Also, how visible is the change option right now? It’s kind of buried, no?
+
+Rachel:
+Yeah, it’s under “Manage Trip,” three taps deep. We should probably make that easier.
+
+Leo:
+We could put a “Change Flight” button right on the main trip card. Like a floating action or whatever.
+
+Rachel:
+Cool, flag that. Let’s also log what users are doing here—how many people bail once they hit “Manage Trip.”
+
+Jared:
+Want me to take a stab at mapping this out in Miro later?
+
+Rachel:
+Yes please. Let’s keep it messy for now—we’ll clean it up after some async work. I’ll write this up as a rough user story map and start pulling together feedback from Sales and Support.
